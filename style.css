@@ -60,14 +60,18 @@ body{
 }
 
 
+
 .box__payment h5{
     font-weight: 900;
     font-size: 15px;
     color: hsl(223, 47%, 23%);
+    display: inline;
+    margin-left: 10px;
 }
 
-.p{
+p{
     font-size: 14px;
+    margin-left: 10px;
     color: #8a8a8a;
 }
 
