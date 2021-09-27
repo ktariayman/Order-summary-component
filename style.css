@@ -1,0 +1,128 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(225, 100%, 94%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+
+    max-width: 450px;
+    background: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.description{
+    padding: 7%;
+    text-align: center;
+}
+
+.description__title{
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    font-size:2rem;
+    margin-bottom: 1rem;
+}
+
+.description__subtitle{
+    color: #000;
+    margin: 1rem;
+}
+
+.box{
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 1rem;
+    display: flex;
+    padding: 25px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box__payment{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+
+.box__payment h5{
+    font-weight: 900;
+    font-size: 15px;
+    color: hsl(223, 47%, 23%);
+}
+
+.p{
+    font-size: 14px;
+    color: #8a8a8a;
+}
+
+.box a{
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+.box a:hover{
+    text-decoration: none;
+    color: hsl(245, 75%, 52%);
+}
+
+
+.btns{
+    display: flex;
+    flex-direction: column;
+}
+.btn__payment{
+    background-color: hsl(245, 75%, 52%);
+    box-shadow: hsl(245, 75%, 52%);    
+    text-decoration: none;
+    color: white;
+    padding: 1rem  ;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+.btn__payment:hover{
+    background-color: hsl(224, 23%, 55%);
+}
+
+/*Here we target the cancel button.*/
+.btn__cancel{
+   text-decoration: none;
+   color: hsl(224, 23%, 55%);
+   font-weight: 900;
+}
+
+.btn__cancel:hover{
+    color: hsl(223, 47%, 23%);
+}
+
+/*Here we are adding a @media and setting up the sizing for the compatability on */
+@media only screen and (max-width: 425px){
+
+    body{
+        background-image: url(images/pattern-background-mobile.svg);
+        font-size: 14px;
+    }
+
+    .container{
+        max-width: 85%;
+    }
+   
+}
